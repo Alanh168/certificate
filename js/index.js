@@ -37,7 +37,7 @@ function updateImage() {
     query_string = "?" + query.join("&");
   }
   var preview = document.getElementById("preview");
-  preview.src = "coderdojocertificate.svg" + query_string;
+  preview.src = "img/coderdojocertificate.svg" + query_string;
   var preview_links = document.getElementsByClassName("preview-link");
   for(var i = 0; i < preview_links.length; i += 1) {
     var preview_link = preview_links[i];
