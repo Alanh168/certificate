@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>CoderDojo Certificate Generator</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" async="" src="js/index.js"></script>
     <script type="text/javascript" async="" src="js/cookies.js"></script>
   </head>
@@ -11,34 +11,46 @@
 
     <h1>CoderDojo Certificate Generator</h1>
 
-    <div class="variables">
-      <div class="variable">
-        Certificate Header:<input type="text" id="text-cert" class="update" value />
-      </div>
-      <div class="variable">
-        Name:<input type="text" id="text-name" class="update" value />
-      </div>
-      <div class="variable">
-        Text:<textarea id="text-achieve" class="update"></textarea>
-      </div>
-      <div class="variable">
-        Diploma:<input type="text" id="text-diploma" class="update" value />
-      </div>
-      <div class="variable">
-        Champion:<input type="text" id="text-champion" class="update" value />
-      </div>
-      <div class="variable">
-        Big Logo:<input type="text" id="logo-big" class="update" value />
-      </div>
-      <div class="variable">
-        Logo in Medal:<input type="text" id="logo-small" class="update" value />
+    <div id="left-side">
+      <div class="variables">
+        <div class="variable">
+          <h3>Certificate Header:</h3>
+          <input type="text" id="text-cert" class="update" value />
+        </div>
+        <div class="variable">
+          <h3>Name:</h3>
+          <input type="text" id="text-name" class="update" value />
+        </div>
+        <div class="variable">
+          <h3>Text:</h3>
+          <textarea id="text-achieve" class="update"></textarea>
+        </div>
+        <div class="variable">
+          <h3>Diploma:</h3>
+          <input type="text" id="text-diploma" class="update" value />
+        </div>
+        <div class="variable">
+          <h3>Champion:</h3>
+          <input type="text" id="text-champion" class="update" value />
+        </div>
+        <div class="variable">
+          <h3>Big Logo:</h3>
+          <input type="text" id="logo-big" class="update" value />
+        </div>
+        <div class="variable">
+          <h3>Logo in Medal:</h3>
+          <input type="text" id="logo-small" class="update" value />
+        </div>
       </div>
     </div>
-    <div class="result">
-      Format: <a class="preview-link" src="coderdojocertificate.svg" target="_blank">A4 landscape</a>
-      <a class="preview-link" src="coderdojocertificate-a4-rotated.svg" target="_blank">A4</a>
-      <iframe width="100%" src="coderdojocertificate.svg" scrolling="no" id="preview">
+    <div id="right-side">
+      <div class="result">
+        <h3>Format:</h3>
+        <a class="preview-link" src="coderdojocertificate.svg" target="_blank">A4 landscape</a>
+        <a class="preview-link" src="coderdojocertificate-a4-rotated.svg" target="_blank">A4</a>
+        <iframe src="coderdojocertificate.svg" scrolling="no" id="preview">
+      </div>
+      <a href="https://github.com/CoderDojoPotsdam/certificate">Source Code, your contributions welcome</a>
     </div>
-    <a href="https://github.com/CoderDojoPotsdam/certificate">Source Code, your contributions welcome</a>
   </body>
 </html>

@@ -5,5 +5,26 @@ html, body {
 }
 
 h1 {
+  text-align: center;
   color: crimson;
+}
+
+iframe {
+  width: 100%;
+  height: 800px;
+}
+
+#left-side {
+  width: 23%;
+  float: left;
+}
+
+#right-side {
+  width: 77%;
+  float: right;
+}
+
+.variable {
+  margin: 10px;
+  float: left;
 }
